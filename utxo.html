@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$UTXO</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        /* Fix the header position */
+        header {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        /* Adjust background image size for the middle section */
+        .background-section {
+            height: 100vh;
+            background-image: url("./img/utxo.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* Ensure content does not hide behind fixed header */
+        .main-content {
+            padding-top: 80px;
+        }
+
+        /* Center and left-align the text within the background section */
+        .background-content {
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            text-align: left;
+            transform: translateY(-50%);
+        }
+
+        .community-section {
+            min-height: 40vh;
+        }
+
+        .token-section {
+            min-height: 10vh;
+        }
+
+
+        /* Add this CSS to your stylesheet */
+        .route-section .relative .flex .items-center .justify-between .border-blue-500 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .route-section .relative .flex .items-center .justify-between .border-blue-500::before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            height: 1px;
+            background-color: #000;
+            content: "";
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body class="bg-pink-200 text-gray-800">
+    <header class="bg-pink-300 p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-600">
+            Bitcoin uses the UTXO model, and Cardano uses the eUTXO model, This is the UTXO alliance.
+        </h1>
+        <div class="flex flex-row space-x-4...">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded text-lg mr-4">
+                <a href="https://app.dexhunter.io/swap?tokenIdSell=686a433bc69f169a83a42ae4b73b50e82be2cfef6adae29bd8298bf10014df105554584f&tokenIdBuy="
+                    target="_blank">Buy $UTXO</a>
+            </button>
+            <a href="https://x.com/ada_utxo" target="_blank"
+                class="bg-blue-500 text-white px-4 py-2 rounded">Twitter</a>
+        </div>
+
+    </header>
+
+    <main class="main-content text-center">
+        <section class="background-section relative">
+            <div class="background-content max-w-3xl mx-auto px-4">
+
+            </div>
+        </section>
+
+        <!--eutxo-->
+        <section class="community-section bg-pink-200 py-16">
+            <div class="max-w-5xl mx-auto grid grid-cols-2 gap-8">
+
+                <div class="col-span-2 flex flex-col items-start">
+                    <h2 class="text-3xl font-bold mb-4">EUTxO Model</h2>
+                </div>
+
+                <div class="col-span-1">
+                    <img src="./img/eutxo.png" alt="eUTXO" class="w-full h-4/4">
+                </div>
+
+                <div class="col-span-1">
+                    <div class="max-w-5xl mx-auto px-4">
+                        <article class="text-left text-xl mb-4">
+                            <span class="text-blue-500">IOHK</span>, the company founded by <span
+                                class="text-blue-500"><a href="https://x.com/IOHK_Charles" target="_blank">Charles
+                                    Hoskinson</a></span>, uses the functional language <span class="text-red-500"><a
+                                    href="https://www.haskell.org/" target="_blank">Haskell</a></span>
+                            to build <span class="text-purple-500"><a href="https://cardano.org/"
+                                    target="_blank">Cardano</a></span> based on the <span
+                                class="text-yellow-500">EUTxO</span>
+                            model.
+                        </article>
+                        <article class="text-left text-xl mb-4">
+                            The <span class="text-yellow-500">UTXO</span> model is the cornerstone of both <span
+                                class="text-purple-500">₳</span> and <span class="text-purple-500">₿</span>. Every new
+                            <span class="text-purple-500"><a href="https://cardano.org/"
+                                    target="_blank">Cardano</a></span>
+                            user first learns about the <span class="text-yellow-500">UTXO</span> model.
+                        </article>
+                        <article class="text-left text-xl mb-4">
+                            The <span class="text-yellow-500">$UTXO</span> token is a utility <span
+                                class="text-green-500">#meme</span> designed to attract a large number of
+                            users to the <span class="text-purple-500"><a href="https://cardano.org/"
+                                    target="_blank">@Cardano</a></span>
+                            ecosystem.
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-section bg-pink-300 py-16">
+            <div class="max-w-5xl mx-auto grid grid-cols-2 gap-8">
+                <div class="col-span-1 flex flex-col items-start">
+                    <h2 class="text-3xl font-bold mb-4">Why Cardano</h2>
+                    <p class="text-lg text-left">
+                        <span class="text-blue-500">High Degree of Decentralization</span> The Cardano network is run
+                        by thousands of independent nodes
+                        worldwide, ensuring decentralization and resistance to censorship. Anyone can participate in the
+                        network by running a node.<br><br>
+                        <span class="text-blue-500">Years of Secure Operation with Zero Downtime and Zero Hacks</span>
+                        Since its mainnet launch, the
+                        Cardano network has maintained stable operation without any downtime or hacker attacks,
+                        demonstrating its exceptional security and stability.<br><br>
+                        <span class="text-blue-500">Run Nodes on Inexpensive Raspberry Pi Devices</span> The hardware
+                        requirements for Cardano nodes are
+                        relatively low, allowing users to run nodes using inexpensive Raspberry Pi devices, thereby
+                        lowering the participation barrier and encouraging more people to join.<br><br>
+                        <span class="text-blue-500">High Scalability</span> Cardano employs a layered architecture and
+                        the Ouroboros consensus protocol,
+                        offering high scalability that can handle a large number of transactions and support complex
+                        smart contracts.<br><br>
+                        <span class="text-blue-500">Peer-Reviewed</span> Cardano’s development process strictly follows
+                        a
+                        scientific approach with peer
+                        review, ensuring the robustness and reliability of every piece of code and protocol.<br><br>
+                        <span class="text-blue-500">Formal Verification</span> Cardano uses formal verification methods,
+                        applying mathematical proofs to
+                        ensure the correctness and security of smart contracts and protocols.<br><br>
+                        <span class="text-blue-500">Loyal and Engaged Community</span> Cardano has a passionate and
+                        loyal community, with members actively
+                        participating in development, promotion, and ecosystem building, providing a solid foundation
+                        for the project’s long-term growth.
+                    </p>
+                </div>
+                <div class="col-span-1 flex justify-center items-center">
+                    <div class="max-w-5xl mx-auto grid gap-8">
+                        <img src="./img/edi.jpeg" alt="edi" class="max-w-full h-auto">
+                        <img src="./img/chart.png" alt="pool" class="max-w-full h-auto">
+                        <img src="./img/eco.png" alt="ecosystem" class="max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="token-section bg-pink-200 py-16">
+            <div class="max-w-5xl mx-auto grid grid-cols-2 gap-8">
+                <!-- First row, second column: Ticker and Policy Id -->
+                <div class="col-span-2 flex flex-col items-start">
+                    <h2 class="text-3xl font-bold mb-4">Tokenomics</h2>
+                    <p>Ticker: <span class="text-yellow-500">$UTXO</span></p>
+                    <p>PolicyId: 686a433bc69f169a83a42ae4b73b50e82be2cfef6adae29bd8298bf1</p>
+                </div>
+
+                <!-- Second row, first column: Placeholder for the pie chart -->
+                <div class="col-span-1">
+                    <img src="./img/ratio.png" alt="Pie Chart" class="w-full h-3/4">
+                </div>
+
+                <!-- Second row, second column: Table -->
+                <div class="col-span-1">
+                    <table class="border-collapse border border-slate-500 w-full">
+                        <caption class="caption-top mb-4 text-lg font-semibold">
+                            Maximum Supply: 20,000,000,000
+                        </caption>
+                        <thead class="text-left">
+                            <tr>
+                                <th class="border border-slate-600 px-4 py-2">Allocation</th>
+                                <th class="border border-slate-600 px-4 py-2">Number of $UTXO</th>
+                                <th class="border border-slate-600 px-4 py-2">占比</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-left">
+                            <tr>
+                                <td class="border border-slate-700 px-4 py-2">Token Sales & LP</td>
+                                <td class="border border-slate-700 px-4 py-2">8,000,000,000</td>
+                                <td class="border border-slate-700 px-4 py-2">40%</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-700 px-4 py-2">Platform</td>
+                                <td class="border border-slate-700 px-4 py-2">2,000,000,000</td>
+                                <td class="border border-slate-700 px-4 py-2">10%</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-700 px-4 py-2">Marketing</td>
+                                <td class="border border-slate-700 px-4 py-2">800,000,000</td>
+                                <td class="border border-slate-700 px-4 py-2">4%</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-700 px-4 py-2">Team</td>
+                                <td class="border border-slate-700 px-4 py-2">1,200,000,000</td>
+                                <td class="border border-slate-700 px-4 py-2">6%</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-700 px-4 py-2">Staking</td>
+                                <td class="border border-slate-700 px-4 py-2">2,500,000,000</td>
+                                <td class="border border-slate-700 px-4 py-2">12.5%</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-700 px-4 py-2">ISPO</td>
+                                <td class="border border-slate-700 px-4 py-2">4,500,000,000</td>
+                                <td class="border border-slate-700 px-4 py-2">22.5%</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-700 px-4 py-2">Treasury</td>
+                                <td class="border border-slate-700 px-4 py-2">1,000,000,000</td>
+                                <td class="border border-slate-700 px-4 py-2">5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="route-section bg-pink-100 py-16">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">Route Map</h2>
+                <div class="relative">
+                    <!-- Horizontal Line -->
+                    <div class="absolute w-full top-2 transform -translate-y-1/2">
+                        <div class="border-t-4 border-blue-500 w-full"></div>
+                    </div>
+                    <div class="flex justify-between items-center relative">
+                        <!-- Event 1 -->
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-500 w-4 h-4 rounded-full z-10"></div>
+                            <div class="text-center mt-4">
+                                <h4 class="text-xl font-bold">coming soon</h4>
+                                <p class="text-gray-600">July 5, 2024</p>
+                                <p class="text-gray-600">&nbsp;</p>
+                            </div>
+                        </div>
+                        <!-- Event 2 -->
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-500 w-4 h-4 rounded-full z-10"></div>
+                            <div class="text-center mt-4">
+                                <h4 class="text-xl font-bold">coming soon</h4>
+                                <p class="text-gray-600">July 8, 2024</p>
+                                <p class="text-gray-600">&nbsp;</p>
+                            </div>
+                        </div>
+                        <!-- Event 3 -->
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-500 w-4 h-4 rounded-full z-10"></div>
+                            <div class="text-center mt-4">
+                                <h4 class="text-xl font-bold">coming soon</h4>
+                                <p class="text-gray-600">July 12, 2024</p>
+                                <p class="text-gray-600">&nbsp;</p>
+                            </div>
+                        </div>
+                        <!-- Event 3 -->
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-500 w-4 h-4 rounded-full z-10"></div>
+                            <div class="text-center mt-4">
+                                <h4 class="text-xl font-bold">coming soon</h4>
+                                <p class="text-gray-600">July 19, 2024</p>
+                                <p class="text-gray-600">&nbsp;</p>
+                            </div>
+                        </div>
+                        <!-- Event 3 -->
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-500 w-4 h-4 rounded-full z-10"></div>
+                            <div class="text-center mt-4">
+                                <h4 class="text-xl font-bold">coming soon</h4>
+                                <p class="text-gray-600">July 26, 2024</p>
+                                <p class="text-gray-600">&nbsp;</p>
+                            </div>
+                        </div>
+                        <!-- Event 3 -->
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-500 w-4 h-4 rounded-full z-10"></div>
+                            <div class="text-center mt-4">
+                                <h4 class="text-xl font-bold">coming soon</h4>
+                                <p class="text-gray-600">July 31, 2024</p>
+                                <p class="text-gray-600">&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--community-->
+        <section class="community-section bg-pink-200 py-16">
+            <div class="max-w-3xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4">Join the <span class="text-yellow-500">$UTXO</span> Community</h2>
+                <p class="text-xl mb-4">
+                    <span class="text-yellow-500">UTXO</span> is the cornerstone of <span
+                        class="text-purple-500">Cardano</span>. Every Hodler should
+                    understand the meaning of <span class="text-yellow-500">UTXO</span> and join us in inviting more new
+                    users to the <span class="text-purple-500">Cardano</span> world.
+                </p>
+                <button class="bg-red-500 text-white px-8 py-4 rounded text-lg"><a href="https://t.me/+u1OYrO316yRhYmE9"
+                        target="_blank">Telegram</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-pink-300 p-4">
+        <div class="grid grid-rows-3 grid-flow-col gap-1 justify-around">
+            <div class="row-span-3">
+                <img class="object-scale-down h-32 w-48" src="./img/ada-bg.png" alt="ADA background">
+            </div>
+            <div class="col-span-2 flex justify-end flex-col">
+                <span class="not-italic font-bold">Newbie-friendly Application</span>
+            </div>
+            <div class="row-span-2 col-span-2 flex flex-col space-y-1">
+                <span class="text-white-500 flex items-center space-x-1">
+                    <img src="./img/vespr.png" class="object-scale-down h-4 w-8" alt="Vespr logo">
+                    <a href="https://www.vespr.xyz/" target="_blank">@Vespr ₳ Wallet</a>
+                </span>
+                <span class="text-blue-500 flex items-center space-x-1">
+                    <img src="./img/hunter.jpeg" class="object-scale-down h-4 w-8" alt="DexHunter logo">
+                    <a href="https://app.dexhunter.io/" target="_blank">@DexHunter Dex Aggregator</a>
+                </span>
+                <span class="text-green-500 flex items-center space-x-1">
+                    <img src="./img/taptools.jpeg" class="object-scale-down h-4 w-8" alt="TapTools logo">
+                    <a href="https://www.taptools.io/" target="_blank">@TapTools Token Tracking</a>
+                </span>
+            </div>
+
+
+            <div class="col-span-2 flex justify-end flex-col">
+                <span class="not-italic font-bold">Service</span>
+            </div>
+            <div class="row-span-2 col-span-2 flex flex-col space-y-1">
+                <span class="text-purple-500 flex items-center space-x-1">
+                    <!-- <img src="./img/vespr.png" class="object-scale-down h-4 w-8" alt="Vespr logo"> -->
+                    <a href="#" target="_blank">Mint Token</a>
+                </span>
+                <span class="text-purple-500 flex items-center space-x-1">
+                    <!-- <img src="./img/hunter.jpeg" class="object-scale-down h-4 w-8" alt="DexHunter logo"> -->
+                    <a href="#" target="_blank">Update Token</a>
+                </span>
+                <span class="text-purple-500 flex items-center space-x-1">
+                    <!-- <img src="./img/taptools.jpeg" class="object-scale-down h-4 w-8" alt="TapTools logo"> -->
+                    <a href="#" target="_blank">more...</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
